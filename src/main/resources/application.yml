@@ -30,6 +30,8 @@
     password: ''
 
 quarkus:
+  oidc:
+    auth-server-url: ${oidc.auth-server-url}
   datasource:
     db-kind: mysql
     username: ${db.username}
