@@ -7,7 +7,31 @@
     username: root
     password: ''
 
+'%prod':
+  db:
+    show_sql: false
+    name: corso
+    server: db
+    port: 3306
+    username: root
+    password: ''
+  oidc:
+    auth-server-url: https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_iwADbDzuF
+    token:
+      audience: '5e89cfg3p9c3dp3n3se265jdqk'
+
+'%test':
+  db:
+    show_sql: false
+    name: corso
+    server: localhost
+    port: 3306
+    username: root
+    password: ''
+
 quarkus:
+  oidc:
+    auth-server-url: ${oidc.auth-server-url}
   datasource:
     db-kind: mysql
     username: ${db.username}
