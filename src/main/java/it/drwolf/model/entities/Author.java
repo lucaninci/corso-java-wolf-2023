@@ -14,7 +14,7 @@ public class Author extends PanacheEntity {
 	private String firstName;
 	private String lastName;
 
-	@OneToMany(mappedBy = "author")
+	@OneToMany(mappedBy = Book_.AUTHOR)
 	@OrderBy("publication")
 	@JsonIgnore
 	private Set<Book> books = new HashSet<>();
