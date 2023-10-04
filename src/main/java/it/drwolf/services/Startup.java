@@ -12,7 +12,6 @@ import jakarta.inject.Inject;
 
 import java.util.Date;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 @ApplicationScoped
 public class Startup {
