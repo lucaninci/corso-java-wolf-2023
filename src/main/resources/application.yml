@@ -7,6 +7,24 @@
     username: root
     password: ''
 
+'%prod':
+  db:
+    show_sql: false
+    name: corso
+    server: db
+    port: 3306
+    username: root
+    password: ''
+
+'%test':
+  db:
+    show_sql: false
+    name: corso
+    server: localhost
+    port: 3306
+    username: root
+    password: ''
+
 quarkus:
   datasource:
     db-kind: mysql
